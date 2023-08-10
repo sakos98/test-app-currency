@@ -16,7 +16,7 @@ export const convertPLNToUSD = (PLN) => {
   }
 
   if (PLN < 0) {
-    return '$0.00';
+    return 'Wrong value...';
   }
   
   return formatter.format(PLNtoUSD).replace(/\u00a0/g, ' ');
